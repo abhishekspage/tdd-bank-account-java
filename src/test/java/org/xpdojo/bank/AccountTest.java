@@ -37,8 +37,9 @@ public class AccountTest {
     public void transferAmount(){
         Account acc1 = new Account(123);
         Account acc2 = new Account(234);
-        acc1.deposit(acc2.withdrawal(100));
-        assertThat(acc1.balance).isEqualTo(100);
+        boolean test = acc1.transferAmount(acc1,acc2,100);
+        //acc1.deposit(acc2.withdrawal(100));
+        assertThat(test).isEqualTo(true);
     }
 
     @Test

@@ -13,7 +13,7 @@ public class Account {
     new Account(123);
     }
 
-    public void deposit(int i) {
+    public  deposit(int i) {
         balance += i;
     }
 
@@ -25,6 +25,12 @@ public class Account {
         }else{
             return 0;
         }
+
+    }
+
+    public boolean transferAmount(Account acc1, Account acc2, int i) {
+        acc1.deposit(acc2.withdrawal(i));
+        return true;
 
     }
 }
