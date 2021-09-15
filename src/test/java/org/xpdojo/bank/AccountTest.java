@@ -48,5 +48,9 @@ public class AccountTest {
         assertThat(acc.balance).isEqualTo(0);
     }
 
+    @Test
+    public void negativeBalance(){
+
+    }
 
 }
