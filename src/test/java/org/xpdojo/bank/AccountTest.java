@@ -34,6 +34,12 @@ public class AccountTest {
 
     }
 
-
+    @Test
+    public void transferAmount(){
+        Account acc1 = new Account(123);
+        Account acc2 = new Account(234);
+        acc1.deposit(acc2.withdrawal(100));
+        assertThat(acc1.balance);
+    }
 
 }
