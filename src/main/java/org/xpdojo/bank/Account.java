@@ -13,7 +13,7 @@ public class Account {
     new Account(123);
     }
 
-    public  deposit(int i) {
+    public  void deposit(int i) {
         balance += i;
     }
 
