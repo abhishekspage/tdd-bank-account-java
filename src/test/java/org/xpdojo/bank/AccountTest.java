@@ -29,7 +29,7 @@ public class AccountTest {
 
         Account account = new Account();
         account.withdrawal(10);
-        assertThat(account.balance);
+        assertThat(account.balance).isEqualTo(-10);
 
     }
 
@@ -41,4 +41,9 @@ public class AccountTest {
         assertThat(acc1.balance).isEqualTo(100);
     }
 
+    @Test
+    public void printAccountBalance(){
+        Account acc = new Account(2345);
+        assertThat(acc.balance).isEqualTo(0);
+    }
 }
