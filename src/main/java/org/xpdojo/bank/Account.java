@@ -10,7 +10,7 @@ public class Account {
     }
 
     public Account() {
-
+    new Account(123);
     }
 
     public void deposit(int i) {
