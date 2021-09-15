@@ -14,7 +14,7 @@ public class AccountTest {
 
         Account account = new Account();
         account.deposit(10);
-        assertThat(account.balance,is(100));
+        assertThat(account.balance);
     }
 
     @Test
@@ -22,7 +22,7 @@ public class AccountTest {
 
         Account account = new Account();
         account.deposit(10);
-        assertThat(account.balance,is(10));
+        assertThat(account.balance);
     }
 
     @Test
