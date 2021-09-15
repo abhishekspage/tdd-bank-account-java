@@ -28,6 +28,10 @@ public class AccountTest {
     @Test
     public void withdrawal(){
 
+        Account account = new Account();
+        account.withdrawal(10);
+        assertThat(account.balance);
+
     }
 
 
