@@ -9,6 +9,10 @@ public class Account {
         accountNumber = i;
     }
 
+    public Account() {
+
+    }
+
     public void deposit(int i) {
         balance += i;
     }

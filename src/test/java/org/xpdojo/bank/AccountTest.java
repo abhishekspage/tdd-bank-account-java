@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.junit.Assert.assertThat;
 
 
 public class AccountTest {
@@ -14,7 +13,7 @@ public class AccountTest {
 
         Account account = new Account();
         account.deposit(10);
-        assertThat(account.balance);
+        assertThat(account.balance).isEqualTo(10);
     }
 
     @Test
@@ -22,7 +21,7 @@ public class AccountTest {
 
         Account account = new Account();
         account.deposit(10);
-        assertThat(account.balance);
+        assertThat(account.balance).isEqualTo(10);
     }
 
     @Test
@@ -39,7 +38,7 @@ public class AccountTest {
         Account acc1 = new Account(123);
         Account acc2 = new Account(234);
         acc1.deposit(acc2.withdrawal(100));
-        assertThat(acc1.balance);
+        assertThat(acc1.balance).isEqualTo(100);
     }
 
 }
